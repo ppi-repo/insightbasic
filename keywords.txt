@@ -1,0 +1,46 @@
+#######################################
+# Syntax Coloring Map — InsightBasicBoard
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+InsightBasicBoard	KEYWORD1
+PayloadField	KEYWORD1
+PayloadVal	KEYWORD1
+FieldKey	KEYWORD1
+ValType	KEYWORD1
+PayloadProvider	KEYWORD1
+CommandHandler	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+update	KEYWORD2
+send	KEYWORD2
+registerPayload	KEYWORD2
+registerCommandHandler	KEYWORD2
+isPinReserved	KEYWORD2
+enableSerialLogging	KEYWORD2
+D	KEYWORD2
+I	KEYWORD2
+B	KEYWORD2
+C	KEYWORD2
+S	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+INSIGHT_MAX_FIELDS	LITERAL1
+INSIGHT_CHUNK_SIZE	LITERAL1
+INSIGHT_JSON_BUF_SIZE	LITERAL1
+INSIGHT_SINGLE_MAX	LITERAL1
+INSIGHT_FIRST_MAX	LITERAL1
+INSIGHT_MIDDLE_MAX	LITERAL1
+INSIGHT_LAST_MAX	LITERAL1
+VAL_FLOAT	LITERAL1
+VAL_INT	LITERAL1
+VAL_BOOL	LITERAL1
+VAL_CHAR	LITERAL1
+VAL_STR	LITERAL1
