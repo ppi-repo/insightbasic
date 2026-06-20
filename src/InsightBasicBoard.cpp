@@ -25,6 +25,11 @@ InsightBasicBoard::InsightBasicBoard()
 // ─────────────────────────────────────────────────────────────────
 
 void InsightBasicBoard::begin(uint32_t baud) {
+  // SoftwareSerial::begin() does not reconfigure the TX pin — only the
+  // constructor does.  Re-assert it here so begin() is safe to call after
+  // external code (e.g. InsightBasicLabs::begin()) has reset the pin to INPUT.
+  pinMode(INSIGHT_UART_TX_PIN, OUTPUT);
+  digitalWrite(INSIGHT_UART_TX_PIN, HIGH);
   _serial.begin(baud);
   _serialActive = true;
   _baudRate = baud;
